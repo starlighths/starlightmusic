@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Debug Page</title>
+    <title>TouchWiz Test</title>
+    <style>
+        body { margin: 0; background: #000; height: 100vh; }
+        #app-container { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            padding: 20px; 
+            height: 100%; 
+        }
+        .music-square { 
+            background: rgba(255, 255, 255, 0.2); 
+            border: 2px solid white; 
+            border-radius: 20px; 
+        }
+    </style>
 </head>
-<body style="background-color: red;"> <h1 style="color: white;">Hello</h1>
-    <div id="app-container" style="border: 5px solid white; height: 100px;"></div>
-    
+<body>
+    <div id="app-container"></div>
     <script>
-        // If this text appears, JS is working
-        document.body.innerHTML += "<h2 style='color:yellow'>JS is working!</h2>";
+        const container = document.getElementById('app-container');
+        for (let i = 0; i < 4; i++) {
+            const square = document.createElement('div');
+            square.classList.add('music-square');
+            container.appendChild(square);
+        }
     </script>
 </body>
 </html>
