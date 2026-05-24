@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TouchWiz Test</title>
-    <style>
-        body { margin: 0; background: #000; height: 100vh; }
-        #app-container { 
-            display: grid; 
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 20px; 
-            padding: 20px; 
-            height: 100%; 
-        }
-        .music-square { 
-            background: rgba(255, 255, 255, 0.2); 
-            border: 2px solid white; 
-            border-radius: 20px; 
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Starlight Music</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app-container"></div>
-    <script>
-        const container = document.getElementById('app-container');
-        for (let i = 0; i < 4; i++) {
-            const square = document.createElement('div');
-            square.classList.add('music-square');
-            container.appendChild(square);
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
