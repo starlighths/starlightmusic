@@ -1,27 +1,26 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at 50% 50%, #005c97, #000000);
-    height: 100vh;
+    height: 100%;
+    background: radial-gradient(circle at center, #005c97, #000);
     overflow: hidden;
-    font-family: sans-serif;
 }
 
 #app-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 20px;
-    height: 100%;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .music-square {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.3);
     
     display: flex;
