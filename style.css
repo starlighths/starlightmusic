@@ -23,3 +23,13 @@ body, html {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.3);
 }
+#app-container {
+    display: grid;
+    /* This creates 5 equal columns and 5 equal rows */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px; /* Slightly tighter gap for a 5x5 grid */
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+}
