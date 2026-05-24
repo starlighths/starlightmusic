@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starlight Music</title>
     <link rel="stylesheet" href="style.css">
+    <title>Debug Page</title>
 </head>
-<body>
-    <div id="app-container"></div>
-    <script src="app.js"></script>
+<body style="background-color: red;"> <h1 style="color: white;">Hello</h1>
+    <div id="app-container" style="border: 5px solid white; height: 100px;"></div>
+    
+    <script>
+        // If this text appears, JS is working
+        document.body.innerHTML += "<h2 style='color:yellow'>JS is working!</h2>";
+    </script>
 </body>
 </html>
